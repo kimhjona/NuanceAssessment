@@ -14,8 +14,46 @@
     -->
 
     <div id="survey">
-      
+      <div class='surveyHeader'><img class='surveyImage' src='images/logo.png'><span class='surveyExit' onclick='quitEverything()'>×</span></div>
+        <div id='submitSuccess'>
+          <p class='surveyTitle'>Thank you!</p>
+          <br>
+          <p>
+            Your information was submitted successfully. We will now connect you to the next available chat agent.
+          </p>
+        </div>
+        <form id='surveyForm'>
+          <p class='surveyTitle'>How can we help you?</p>
+          <br>
+          <p>* Full Name
+            <input class='surveyInput' placeholder="John Doe" id='name'></input>
+          </p>
+          <p><span id='phoneText'>* Phone Number<span id='phoneTextHidden'> - invalid phone number</span></span>
+            <input class='surveyInput' placeholder="888-123-4567" id='phone'></input>
+          </p>
+          <p>* State
+            <div class='selectInput' id='state'>
+              <select>
+                <option value="default">Please select a state</option>
+                <option value="California">California</option>
+              </select>
+            </div>
+          </p>
+          <p>* Please describe your question
+            <textarea cols="40" rows="5" class='bigSurveyInput' id='question'></textarea>
+          </p>
+          <p>
+            <input class='surveySubmit' onclick='submitSurvey()' value='Submit'></input>
+          </p>
+          <br><p></p>
+          <p>
+            <div class='infoText'>*required field</div>
+          </p>
+        </form>
+      <div class='surveyFooter'>Powered by Nuance</div>
     </div>
+
+    <!-- image sizing width='150px' height='auto' -->
 
     <!-- You shouldn't need to change any of the code below here -->
 

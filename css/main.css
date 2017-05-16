@@ -6,4 +6,162 @@
   height: 600px;
   position: fixed;
   width: 350px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+.surveyHeader {
+  background-color: #333;
+  border-bottom: 3px solid #1a6b96;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.surveyImage {
+  padding: 3px 0px 3px 20px;
+  width: 150px;
+  height: auto;
+}
+
+.surveyExit {
+  cursor: pointer;
+  margin-left: auto;
+  color: white;
+  padding-right: 20px;
+}
+
+.surveyTitle {
+  padding-top: 15px;
+  font-size: 20px;
+}
+
+.surveyFooter {
+  background-color: #ccc;
+  position: absolute;
+  font-size: 12px;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 7px 0 7px 0;
+}
+
+#surveyForm {
+  margin: 20px 35px 0px 35px;
+  line-height: 25px;
+  /*display: none;*/
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  text-indent: 10px;
+  box-sizing:border-box;
+}
+
+input:focus {
+  background-color: #e6f5ff;
+}
+
+textarea {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  text-indent: 10px;
+  box-sizing:border-box;
+}
+
+textarea:focus {
+  background-color: #e6f5ff;
+}
+
+.surveyInput {
+  width: 100%;
+  text-align: left;
+  height: 32px;
+  margin-bottom: 10px;
+}
+
+.surveyInput::placeholder {
+  font-style: italic;
+}
+
+select {
+  -webkit-appearance: none; 
+  -moz-appearance: none;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 32px;
+  background: url(http://i.imgur.com/2DOD2kY.png) 98% / 10% no-repeat;
+  background-size: 8px;
+  padding-left: 10px;
+}
+
+select:focus {
+  background-color: #e6f5ff;
+}
+
+option {
+  /*margin-left: 100px;*/
+}
+
+.selectInput {
+  background: transparent;
+  overflow: hidden;
+  width: 100%;
+  background-color: white;
+}
+
+.bigSurveyInput {
+  width: 100%;
+  text-align: left;
+  height: 60px;
+  text-indent: 3px;
+}
+
+p {
+  padding: 3px 0 3px 0;
+}
+
+.surveySubmit {
+  float: right;
+  text-align: center;
+  background-color: #1a6b96;
+  color: white;
+  padding: 10px 0 10px 0;
+  text-indent: 0px;
+  cursor: pointer;
+}
+
+.surveySubmit:focus {
+  background-color: #1a6b96;
+  outline: 0;
+}
+
+
+.infoText {
+  margin-right: 3px;
+  float: right;
+  font-size: 10px;
+}
+
+.error {
+  outline-color: red;
+  background-color: #ffb3b3;
+  border: 1px solid red;
+}
+
+.red {
+  color: red;
+}
+
+#phoneTextHidden {
+  display: none;
+}
+
+#submitSuccess {
+  margin: 20px 35px 0px 35px;
+  line-height: 20px;
+  display: none;
 }
